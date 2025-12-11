@@ -4,9 +4,9 @@
   "description": "for learning",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/task6.js",
+    "start": "node dist/task7.js",
     "build": "tsc",
-    "dev": "ts-node src/task6.ts"
+    "dev": "ts-node src/task7.ts"
   },
   "repository": {
     "type": "git",
