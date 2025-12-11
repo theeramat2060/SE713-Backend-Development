@@ -67,7 +67,7 @@
 // console.log(result, 'type of result:', typeof result);
 
 
-// const add = (a:number,b:number):string => {
+// export const add = (a:number,b:number):string => {
 //     const result =  a+b;
 //     return result.toString();
 // }
@@ -76,18 +76,17 @@
 // console.log(result, 'type of result:', typeof result);
 
 
-function findMax(numbers: number[]): string {
-    let max = numbers[0]; // กำหนดค่าเริ่มต้นเป็นตัวแรกของ list
 
-    for (let i = 1; i < numbers.length; i++) {
-        if (numbers[i] > max) {
-            max = numbers[i];
-        }
-    }
 
-    return max.toString(); // คืนค่าเป็น string
+export const  subtract = (a:number,b:number):string => {
+    const result =  a-b;
+    return result.toString();
 }
 
-console.log(findMax([10, 50, 30])); // "50"
+const  add = (a:number,b:number):string => {
+    const result =  a+b;
+    return result.toString();
+}
+export default add;
 
 
