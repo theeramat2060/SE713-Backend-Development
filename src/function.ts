@@ -16,14 +16,39 @@
 //
 // console.log(greet('John'))
 
-function sumScores(scores: number[]): number {
-    let total = 0;
+// function sumScores(scores: number[]): number {
+//     let total = 0;
+//
+//     for (let i = 0; i < scores.length; i++) {
+//         total += scores[i];
+//     }
+//
+//     return total;
+// }
+//
+// console.log(sumScores([10, 20, 30]));
 
-    for (let i = 0; i < scores.length; i++) {
-        total += scores[i];
-    }
 
-    return total;
-}
+// const greet = function greet(name){
+//     return 'Hello ' + name
+// }
+//
+// console.log(greet('John'))
 
-console.log(sumScores([10, 20, 30]));
+// Arrow function
+// const greet = (name) => 'Hello ' + name
+//
+// console.log(greet('John'))
+
+//arrow function with multiple parameters
+// const multiply = (x,y) => { return x * y }
+//
+// console.log(multiply(5, 10))
+
+
+const maxValue = (a: number, b: number): number => {
+    return a > b ? a : b;
+};
+
+console.log(maxValue(10, 20)); // 20
+console.log(maxValue(50, 30)); // 50
