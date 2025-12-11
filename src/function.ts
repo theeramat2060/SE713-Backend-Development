@@ -46,9 +46,48 @@
 // console.log(multiply(5, 10))
 
 
-const maxValue = (a: number, b: number): number => {
-    return a > b ? a : b;
-};
+// const maxValue = (a: number, b: number): number => {
+//     return a > b ? a : b;
+// };
+//
+// console.log(maxValue(10, 20)); // 20
+// console.log(maxValue(50, 30)); // 50
 
-console.log(maxValue(10, 20)); // 20
-console.log(maxValue(50, 30)); // 50
+
+// const add = (a,b) => {
+//     return a+b;
+// }
+// console.log(add(1,2));
+
+//
+// const add = (a:number,b:number) => {
+//     return a+b;
+// }
+// const result = add(1,2) + 0;
+// console.log(result, 'type of result:', typeof result);
+
+
+// const add = (a:number,b:number):string => {
+//     const result =  a+b;
+//     return result.toString();
+// }
+//
+// const result = add(1,2) + 0;
+// console.log(result, 'type of result:', typeof result);
+
+
+function findMax(numbers: number[]): string {
+    let max = numbers[0]; // กำหนดค่าเริ่มต้นเป็นตัวแรกของ list
+
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+        }
+    }
+
+    return max.toString(); // คืนค่าเป็น string
+}
+
+console.log(findMax([10, 50, 30])); // "50"
+
+
